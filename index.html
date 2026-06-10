@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -16,16 +17,19 @@
 
 <body>
 
-<!-- HEADER -->
+<!-- =======================
+     HEADER
+======================= -->
 <header class="header">
   <div class="container nav">
 
     <div class="logo">
-      <img src="img/logo.png" alt="Lovely Dog Care Logo">
+      <img src="img/logo.png" alt="Lovely Dog Care Logo" class="logo">
     </div>
 
     <nav>
       <a href="#services">Servicios</a>
+      <a href="#gallery">Galería</a>
       <a href="#pricing">Precios</a>
       <a href="#booking">Reservas</a>
       <a href="#contact">Contacto</a>
@@ -34,8 +38,11 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
+
+<!-- =======================
+     HERO
+======================= -->
+<section class="hero reveal">
   <div class="container hero-grid">
 
     <div class="hero-text">
@@ -55,8 +62,11 @@
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section">
+
+<!-- =======================
+     SERVICES
+======================= -->
+<section id="services" class="section reveal">
   <div class="container">
 
     <h2>Servicios</h2>
@@ -75,7 +85,7 @@
 
       <div class="card">
         <h3>Estética Canina</h3>
-        <p>Looks por raza.</p>
+        <p>Looks personalizados por raza.</p>
       </div>
 
     </div>
@@ -83,8 +93,35 @@
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing" class="section soft">
+
+<!-- =======================
+     GALLERY (REAL TRUST)
+======================= -->
+<section id="gallery" class="section reveal">
+  <div class="container">
+
+    <h2>Our Happy Dogs 🐶</h2>
+    <p>Clientes reales que confían en nosotros</p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item"><img src="img/perro2.png" alt=""></div>
+      <div class="gallery-item"><img src="img/perro3.png" alt=""></div>
+      <div class="gallery-item"><img src="img/perro4.png" alt=""></div>
+      <div class="gallery-item"><img src="img/perro5.png" alt=""></div>
+      <div class="gallery-item"><img src="img/perro6.png" alt=""></div>
+      <div class="gallery-item"><img src="img/perro7.png" alt=""></div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =======================
+     PRICING
+======================= -->
+<section id="pricing" class="section soft reveal">
   <div class="container">
 
     <h2>Precios</h2>
@@ -111,8 +148,11 @@
   </div>
 </section>
 
-<!-- BOOKING -->
-<section id="booking" class="section">
+
+<!-- =======================
+     BOOKING (CALENDLY + STRIPE)
+======================= -->
+<section id="booking" class="section reveal">
   <div class="container">
 
     <h2>Reservas & Pagos</h2>
@@ -122,10 +162,7 @@
       <div class="box">
         <h3>Agenda tu cita</h3>
 
-        <iframe
-          src="https://calendly.com/YOUR_LINK"
-          frameborder="0">
-        </iframe>
+        <iframe src="https://calendly.com/YOUR_LINK" frameborder="0"></iframe>
       </div>
 
       <div class="box">
@@ -142,44 +179,78 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section dark">
+
+<!-- =======================
+     CONTACT (CONVERSION BLOCK)
+======================= -->
+<section id="contact" class="section dark reveal">
   <div class="container">
 
     <h2>Contacto</h2>
 
     <div class="grid">
 
-      <div class="contact">
+      <a class="contact" href="https://wa.me/18632894525?text=Hola%20quiero%20info%20🐶" target="_blank">
         <i class="fa fa-phone"></i>
-        <h4>Teléfono</h4>
+        <h4>WhatsApp</h4>
         <p>+1 863 289 4525</p>
-      </div>
+      </a>
 
-      <div class="contact">
+      <a class="contact" href="mailto:email@lovelydogcare.com">
         <i class="fa fa-envelope"></i>
         <h4>Email</h4>
         <p>email@lovelydogcare.com</p>
-      </div>
+      </a>
 
-      <div class="contact">
+      <a class="contact" href="https://instagram.com/lovely_dog_care" target="_blank">
         <i class="fa fa-instagram"></i>
         <h4>Instagram</h4>
-        <p>@lovelydogcare</p>
-      </div>
+        <p>@lovely_dog_care</p>
+      </a>
 
     </div>
 
   </div>
 </section>
 
-<!-- FOOTER -->
+
+<!-- =======================
+     FOOTER
+======================= -->
 <footer class="footer">
   <div class="container">
+
     <p>© 2024 Lovely Dog Care. Todos los derechos reservados.</p>
-    <p>Diseñado por <a href="https://chepot87.github.io/Norvak-Links/" target="_blank">Norvak Web</a></p>
+
+    <p>
+      Diseñado por
+      <a href="https://chepot87.github.io/Norvak-Links/" target="_blank">
+        Norvak Web
+      </a>
+    </p>
+
   </div>
 </footer>
+
+
+<!-- =======================
+     FLOATING ACTIONS
+======================= -->
+
+<!-- WhatsApp floating -->
+<a href="https://wa.me/18632894525?text=Hola%20quiero%20info%20🐶"
+   class="whatsapp-float"
+   target="_blank">
+   💬
+</a>
+
+<!-- Sticky CTA -->
+<a href="#booking" class="sticky-cta">
+  Book Now 🐶
+</a>
+
+<!-- Scroll animation + interactions -->
+<script src="script.js"></script>
 
 </body>
 </html>
