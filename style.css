@@ -538,3 +538,112 @@ nav a{
   height:135px;
   object-fit:cover;
 }
+
+.about-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.about-main{
+  flex:1;
+}
+
+.about-section{
+  padding:170px 0 90px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about-photo img{
+  width:100%;
+  border-radius:28px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.18);
+  display:block;
+}
+
+.about-content{
+  background:rgba(255,255,255,0.58);
+  padding:32px;
+  border-radius:28px;
+  border:1px solid rgba(255,255,255,0.45);
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.about-badge{
+  display:inline-block;
+  background:rgba(255,122,151,0.16);
+  color:#ff5f82;
+  padding:8px 14px;
+  border-radius:999px;
+  font-weight:700;
+  margin-bottom:14px;
+}
+
+.about-content h1{
+  font-size:2.5rem;
+  margin-bottom:16px;
+}
+
+.about-content p{
+  color:#444;
+  margin-bottom:14px;
+}
+
+.about-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin:24px 0;
+}
+
+.about-card{
+  background:rgba(255,255,255,0.7);
+  padding:18px;
+  border-radius:18px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,0.5);
+}
+
+.about-card i{
+  color:#ff7a97;
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.about-card h3{
+  font-size:1rem;
+  margin-bottom:6px;
+}
+
+.about-card p{
+  font-size:0.9rem;
+  margin:0;
+}
+
+@media(max-width:768px){
+  .about-section{
+    padding-top:210px;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-content{
+    padding:24px;
+  }
+
+  .about-cards{
+    grid-template-columns:1fr;
+  }
+
+  .about-content h1{
+    font-size:2.1rem;
+  }
+}
