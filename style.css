@@ -503,6 +503,9 @@ color:white;
 ======================= */
 @media(max-width:768px){
 
+  .hero{
+  padding-top:280px;
+}
   .hero-grid,
   .grid,
   .booking{
